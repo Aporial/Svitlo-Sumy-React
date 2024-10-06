@@ -1,0 +1,48 @@
+.tabs-container {
+  width: 100%;
+  background: linear-gradient(135deg, #ffccbc, #ffab91); /* Градієнтний фон */
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: relative; /* Додано, щоб індикатор міг позиціонуватись */
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #3e2723; /* Колір тексту вкладок */
+  font-weight: bold;
+  flex: 1; /* Рівномірно розподіляє вкладки */
+  text-align: center; /* Центрує текст */
+  position: relative; /* Для позиціонування індикатора */
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Ефект при наведенні */
+}
+
+.tab.active {
+  color: #ffcc00; /* Жовтий колір тексту активної вкладки */
+}
+
+.tab-panel {
+  padding: 20px;
+  background-color: #ffe082; /* Білий фон для контенту */
+  border-radius: 0 0 8px 8px; /* Закруглення куточків внизу */
+  text-align: center; /* Центрує текст */
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 4px; /* Висота індикатора */
+  width: 33.33%; /* Ширина індикатора */
+  background-color: #ffcc00; /* Жовтий колір індикатора */
+  transition: left 0.3s; /* Додаємо плавний перехід для переміщення */
+}

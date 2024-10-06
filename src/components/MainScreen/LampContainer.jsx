@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 
 const ImgLamp = styled.img`
-  width: 25%;
+  width: 30%;
 `
 
 export default function LampContainer() {
